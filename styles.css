@@ -640,6 +640,7 @@ TESTIMONIALS
 
 #testimonials .row {
   display: flex;
+  gap: 24px;
 }
 .testimonials__img--wrapper {
   display: flex;
@@ -652,13 +653,76 @@ TESTIMONIALS
   width: 50%;
   display: flex;
   flex-direction: column;
-
   align-items: flex-start;
 }
+.testimonials__title{
 
-.testimonials__para {
+}
+
+.testimonial__img--wrapper{
+  display: flex;
+  width: 80px;
+  height: 80px;
+}
+.testimonial__img{
+  width: 100%;
+  border-radius: 52px;
+}
+
+
+.testimonial__para,
+.testimonials__para{
   text-align: left;
 }
+
+
+
+.testimonial__footer{
+  margin-top: 16px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+}
+.testimonial__info{
+  align-self: start;
+}
+.testimonial__title{
+  margin: 16px 0;
+}
+.testimonial__person{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  gap: 16px;
+}
+.testimonials__arrows{
+  display: flex;
+  gap: 8px;
+}
+.arrow{
+  width: 50px;
+  height: 50px;
+  border: none;
+  border-radius: 32px;
+  color: var(--purple);
+  transition: all 0.3s ease;
+  cursor: pointer;
+}
+.arrow:hover{
+  background-color: rgb(200, 206, 214);
+}
+
+.arrow__divider{
+  width: 1px;
+  /* height: 60%; */
+  min-height: 40px;
+  background-color: var(--grey);
+  align-self: center;
+}
+
+
+
 
 /* styling from tReact for the stars */
 
@@ -671,6 +735,7 @@ TESTIMONIALS
   --tw-text-opacity: 1;
   color: rgb(246 173 85 / var(--tw-text-opacity));
 }
+
 
 /* styling from tReact for the arrow*/
 
@@ -738,4 +803,11 @@ footer {
 .footer__social--logo {
   width: 40px;
   height: 40px;
+}
+
+.divider{
+  width: 100%;
+  height: 2px;
+  border: 1px solid var(--grey);
+  margin: 0 auto;
 }
